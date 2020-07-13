@@ -1,2 +1,4 @@
 -- lis order by
-SELECT * FROM  ORDER BY score DESC;
+SELECT *
+FROM
+ORDER BY score DESC;
