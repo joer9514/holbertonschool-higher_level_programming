@@ -1,4 +1,7 @@
 -- lis order by
-SELECT *
+SELECT
+	score, name
 FROM
-ORDER BY score DESC;
+	second_table
+ORDER BY
+      score DESC;
