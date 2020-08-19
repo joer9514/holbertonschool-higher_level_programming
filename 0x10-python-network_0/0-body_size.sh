@@ -1,3 +1,3 @@
 #!/bin/bash
 # Bash script
-curl -s "$1" | wc -c#!/bin/bash
+curl -s "$1" | wc -c
