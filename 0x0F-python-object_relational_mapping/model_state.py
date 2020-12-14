@@ -1,17 +1,19 @@
 #!/usr/bin/python3
-"""
-contains the class definition of a State and an instance Base
-"""
+""" module contains the class state and instance base """
 
-import sqlalchemy
-from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
 
 class State(Base):
-    """Representation of a state"""
+    """ state """
     __tablename__ = 'states'
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer,
+                primary_key=True,
+                nullable=False,
+                unique=True,
+                autoincrement=True)
+
     name = Column(String(128), nullable=False)
